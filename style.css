@@ -1,0 +1,54 @@
+h1{
+  height:5%;
+}
+body{
+  height:100vh;
+  width:100vw;
+}
+
+.grid {
+  width:100%;
+  display:grid;
+  grid-template-columns: 3fr 2fr;
+  margin-top:140px;
+}
+
+.grid_control {
+  display:grid;
+  grid-template-rows: 1fr 1fr 4fr 2fr;
+  width:20vw;
+  height:100vh;
+  position:absolute;
+  right:0px;
+  background:white
+}
+
+.text {
+  text-align: center;
+}
+
+img {
+  max-width:100%;
+  height: auto;
+}
+#login_button {
+  align:center;
+  width:70%;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: center;
+}
+#textinput {
+  align:center;
+  width: 80%;
+  height:15px;
+  font-size:15px;
+}
+@media(max-aspect-ratio:5/4) {
+  .grid{
+    display: block;
+  }
+  .grid_map{
+    display: block;
+  }
+}
