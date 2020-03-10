@@ -37,9 +37,8 @@ function makeCorsRequest(url) {
 
   // Response handlers.
   xhr.onload = function() {
-    var text = xhr.responseText;
     var title = getTitle(text);
-    alert('Response from CORS request to ' + url + ': ' + title);
+    alert('Response from CORS request to ' + url + ': ';
   };
 
   xhr.onerror = function() {
